@@ -1,0 +1,63 @@
+.navbar{
+    height: 50px;
+    border-bottom: 0.5px solid rgb(236, 236, 236);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    
+    .wrapper{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // background-color: rebeccapurple;
+
+        .search{
+            font-size: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0.5px solid lightgray;
+            padding: 3px;
+            cursor: pointer;
+
+            .icon-search{
+                font-size: 22px;
+            }
+
+            input{
+                border: none;
+                outline: none;
+                background-color: transparent;
+
+                &::placeholder{
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .items{
+            display: flex;
+            align-items: center;
+
+            .item{
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+
+                .icon{
+                    font-size: 22px;
+                    cursor: pointer;
+                }
+
+                .language{
+                    user-select: none;
+                    margin-left: 10px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
